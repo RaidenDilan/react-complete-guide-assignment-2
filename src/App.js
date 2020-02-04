@@ -10,7 +10,6 @@ class App extends Component {
   }
 
   deleteCharHandler = (index) => {
-    console.log('this', this);
     const text = this.state.userInput.split('');
     text.splice(index, 1);
     const updatedText = text.join('');
@@ -27,7 +26,7 @@ class App extends Component {
         character={ char }
         clicked={ () => this.deleteCharHandler(index) }
         key={ index }
-      />;
+        />;
     });
 
     return (

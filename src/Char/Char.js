@@ -13,7 +13,7 @@ const char = (props) => {
 
   return (
     <div
-      style={charStyle}
+      style={ charStyle }
       onClick={ props.clicked }
       >
       <p>{ props.character }</p>
